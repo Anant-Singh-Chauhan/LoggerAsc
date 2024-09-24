@@ -8,6 +8,9 @@
 # test file
 test.rest
 
+# log file
+app.log
+
 # testing
 /coverage
 
