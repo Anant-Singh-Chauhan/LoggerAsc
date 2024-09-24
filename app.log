@@ -1,0 +1,74 @@
+{"level":"info","message":"Test log message","meta":{"key":"value"},"timestamp":"2024-09-19T19:14:59.484Z"}
+{"level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-19T19:42:46.438Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"localhost","os":"Android","osVersion":"6.0"},"timestamp":"2024-09-19T19:43:14.909Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"localhost","os":"Android","osVersion":"6.0"},"timestamp":"2024-09-19T19:43:14.913Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T19:47:41.033Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T19:47:41.039Z"}
+{"level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-19T19:52:18.502Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T19:53:05.936Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T19:53:05.945Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"localhost","os":"Android","osVersion":"6.0"},"timestamp":"2024-09-19T19:54:20.906Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"localhost","os":"Android","osVersion":"6.0"},"timestamp":"2024-09-19T19:54:20.909Z"}
+{"level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-19T19:59:40.425Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"localhost","os":"Android","osVersion":"6.0"},"timestamp":"2024-09-19T20:00:02.417Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"localhost","os":"Android","osVersion":"6.0"},"timestamp":"2024-09-19T20:00:02.423Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"116.0.0.0","ip":"localhost","os":"Android","osVersion":"13"},"timestamp":"2024-09-19T20:00:13.656Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"116.0.0.0","ip":"localhost","os":"Android","osVersion":"13"},"timestamp":"2024-09-19T20:00:13.660Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"116.0.0.0","ip":"localhost","os":"Android","osVersion":"13"},"timestamp":"2024-09-19T20:02:47.250Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"116.0.0.0","ip":"localhost","os":"Android","osVersion":"13"},"timestamp":"2024-09-19T20:02:47.265Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T20:03:07.416Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T20:03:07.421Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T20:08:21.371Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"116.0.0.0","ip":"localhost","os":"Android","osVersion":"13"},"timestamp":"2024-09-19T20:08:21.394Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T20:08:45.604Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Edge","browserVersion":"128.0.0.0","ip":"localhost","os":"Windows","osVersion":"10"},"timestamp":"2024-09-19T20:08:45.613Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"192.168.1.6","os":"Android","osVersion":"10"},"timestamp":"2024-09-19T20:08:54.552Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"192.168.1.6","os":"Android","osVersion":"10"},"timestamp":"2024-09-19T20:08:54.556Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"192.168.1.6","os":"Android","osVersion":"10"},"timestamp":"2024-09-19T20:09:03.339Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.0.0","ip":"192.168.1.6","os":"Android","osVersion":"10"},"timestamp":"2024-09-19T20:09:03.351Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.6613.98","ip":"192.168.1.6","os":"iOS","osVersion":"17.2"},"timestamp":"2024-09-19T20:09:54.898Z"}
+{"level":"info","message":"React app accessed","meta":{"browser":"Chrome","browserVersion":"128.0.6613.98","ip":"192.168.1.6","os":"iOS","osVersion":"17.2"},"timestamp":"2024-09-19T20:09:54.903Z"}
+{"isDefault":true,"label":"default label","level":"\u001b[31merror\u001b[39m","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:30:07.635Z"}
+{"label":"default label","level":"\u001b[32minfo\u001b[39m","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T07:30:31.951Z"}
+{"isDefault":true,"label":"default label","level":"\u001b[31merror\u001b[39m","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:33:15.664Z"}
+{"isDefault":true,"label":"default label","level":"\u001b[31merror\u001b[39m","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:33:29.338Z"}
+{"label":"default label","level":"\u001b[32minfo\u001b[39m","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T07:33:36.653Z"}
+{"isDefault":true,"label":"default label","level":"\u001b[31merror\u001b[39m","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:36:32.126Z"}
+{"label":"default label","level":"\u001b[32minfo\u001b[39m","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T07:36:35.064Z"}
+{"isDefault":true,"level":"\u001b[31merror\u001b[39m","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:39:24.687Z"}
+{"isDefault":true,"level":"\u001b[32minfo\u001b[39m","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T07:39:33.805Z"}
+undefined
+undefined
+{"isDefault":true,"label":"default label","level":"error","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:45:13.883Z"}
+{"isDefault":true,"label":"default label","level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T07:46:40.710Z"}
+{"isDefault":true,"label":"default label","level":"error","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T07:49:31.651Z"}
+{"ip":"local","isDefault":true,"key":"value","label":"default label","level":"error","message":"error log 222 message","timestamp":"2024-09-24T08:02:19.052Z"}
+{"isDefault":true,"key":"value","label":"default label","level":"info","message":"Test log 222 message","timestamp":"2024-09-24T08:02:31.845Z"}
+{"label":"default label","level":"error","message":"error log 222 message","timestamp":"2024-09-24T08:04:55.321Z"}
+{"label":"default label","level":"error","message":"error log 222 message","timestamp":"2024-09-24T08:05:46.383Z"}
+{"label":"default label","level":"info","message":"Test log 222 message","timestamp":"2024-09-24T08:06:07.754Z"}
+{"isDefault":true,"label":"default label","level":"error","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T08:07:03.979Z"}
+{"isDefault":true,"label":"default label","level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T08:07:38.037Z"}
+{"isDefault":true,"level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T08:09:06.494Z"}
+{"isDefault":true,"level":"error","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T08:09:22.530Z"}
+{"isDefault":true,"level":"error","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T08:11:47.967Z"}
+{"isDefault":true,"label":"localTest","level":"info","message":"Test log 222 message","meta":{"key":"value"},"timestamp":"2024-09-24T08:17:27.815Z"}
+{"isDefault":true,"label":"localTest","level":"error","message":"error log 222 message","meta":{"ip":"local","key":"value"},"timestamp":"2024-09-24T08:17:34.207Z"}
+{"isDefault":true,"label":"localTest","level":"info","message":"Test log 222 message","meta":{"isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T08:23:23.147Z"}
+{"isDefault":true,"label":"localTest","level":"error","message":"error log 222 message","meta":{"ip":"local","isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T08:23:26.748Z"}
+{"isDefault":true,"label":"localTest","level":"info","message":"Test log 222 message","meta":{"isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T13:04:17.790Z"}
+{"isDefault":true,"label":"localTest","level":"info","message":"Test log 222 message","meta":{"isDefault":true,"key":"value","project":"localTest"},"project":"localTest","timestamp":"2024-09-24T13:08:57.299Z"}
+{"isDefault":false,"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"project":"Portfolio","timestamp":"2024-09-24T13:12:52.897Z"}
+{"isDefault":false,"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"project":"Portfolio","timestamp":"2024-09-24T13:12:52.901Z"}
+{"isDefault":false,"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"project":"Portfolio","timestamp":"2024-09-24T15:10:23.312Z"}
+{"isDefault":false,"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"project":"Portfolio","timestamp":"2024-09-24T15:10:23.389Z"}
+{"isDefault":true,"label":"localTest","level":"info","message":"Test log 222 message","meta":{"isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T15:15:44.879Z"}
+{"isDefault":true,"label":"localTest","level":"error","message":"error log 222 message","meta":{"ip":"local","isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T15:15:47.518Z"}
+{"isDefault":false,"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"timestamp":"2024-09-24T15:16:44.376Z"}
+{"isDefault":false,"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"timestamp":"2024-09-24T15:16:44.455Z"}
+{"level":"info","message":"Test log 222 message","meta":{"isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T15:18:18.967Z"}
+{"level":"error","message":"error log 222 message","meta":{"ip":"local","isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T15:18:21.415Z"}
+{"label":"localTest","level":"info","message":"Test log 222 message","meta":{"isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T15:20:48.925Z"}
+{"label":"localTest","level":"error","message":"error log 222 message","meta":{"ip":"local","isDefault":true,"key":"value","project":"localTest"},"timestamp":"2024-09-24T15:20:52.270Z"}
+{"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"timestamp":"2024-09-24T15:21:56.801Z"}
+{"label":"Portfolio","level":"info","message":"Portfolio accessed.","meta":{"browser":"Edge","ip":"localhost","isDefault":false,"os":"Windows","project":"Portfolio"},"timestamp":"2024-09-24T15:21:56.881Z"}
