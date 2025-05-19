@@ -1,12 +1,15 @@
+const fs = require("fs");
 const path = require("path");
 const winston = require("winston");
 const { combine, timestamp, json } = winston.format;
 
 const env = process.env.NODE_ENV || "development";
 const config = require(`./config/${env}`);
+const logDir = path.join(__dirname, "logs");
 
-const logFilePath = path.join(__dirname, "app.log");
+if (!fs.existsSync(logDir)) fs.mkdirSync(logDir);
 
+// log formats
 const consoleLogFormat = winston.format.combine(
   winston.format.colorize(),
   winston.format.printf(({ level, message, timestamp }) => {
@@ -14,30 +17,39 @@ const consoleLogFormat = winston.format.combine(
   })
 );
 
-// Define the custom format for logs
+// custom format for logs
 const logFormat = combine(
   timestamp(),
-  json() // Ensure logs are in JSON format for Promtail
+  json() // format for Promtail
 );
 
-const customLogger = winston.createLogger({
-  level: config.logLevel.toString(),
-  format: logFormat,
-  defaultMeta: {}, // Remove default meta from here, set it per log
-  transports: [
-    new winston.transports.Console({
-      format: consoleLogFormat,
-      handleExceptions: true,
-    }),
-    new winston.transports.File({
-      filename: logFilePath,
-      handleExceptions: true,
-      maxsize: 5 * 1024 * 1024,
-      maxFiles: 5,
-    }),
-  ],
-  exitOnError: false,
-});
+// Cache loggers for reuse
+const loggerMap = {};
+
+function getLogger(projectName = "default") {
+
+  if (!loggerMap[projectName]) {
+    loggerMap[projectName] = winston.createLogger({
+      level: config.logLevel.toString(),
+      format: logFormat,
+      defaultMeta: {},
+      transports: [
+        new winston.transports.Console({
+          format: consoleLogFormat,
+          handleExceptions: true,
+        }),
+        new winston.transports.File({
+          filename: path.join(logDir, `${projectName}.log`),
+          handleExceptions: true,
+          maxsize: 5 * 1024 * 1024, // 5 MB rotation
+          maxFiles: 5,
+        }),
+      ],
+    });
+  }
+
+  return loggerMap[projectName];
+}
 
 // Export the logger
-module.exports = customLogger;
+module.exports = getLogger;

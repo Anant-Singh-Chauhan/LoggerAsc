@@ -1,6 +1,7 @@
 services:
   logger-service:
-    build: .
+    build:
+      context: .
     container_name: logger-asc-service
     restart: always
     ports:
@@ -10,8 +11,9 @@ services:
       PROJECT: logger-asc-service
       PLATFORM: nodejs
     volumes:
-      - ./app.log:/app/app.log  # Logger writes here
-      - ./app.log:/var/log/app.log  # Promtail reads here
+      - ./logs:/app/logs  # Logger writes here
+    networks:
+      - logger-net
 
 
   promtail:
@@ -21,8 +23,11 @@ services:
     ports:
       - "9080:9080"  # 🔥 Expose Promtail's HTTP API to the host
     volumes:
-      - ./promtail-config.yaml:/etc/promtail/config.yml
-      - ./app.log:/var/log/app.log  # Mount log file so Promtail can read it
+      - ./promtail-config.yaml:/etc/promtail-config.yml
+      - ./logs:/var/log/logger  # shared volume for logs
+    command: -config.file=/etc/promtail-config.yml
+    networks:
+      - logger-net
 
   loki:
     image: grafana/loki:2.9.1
@@ -32,6 +37,9 @@ services:
       - "3100:3100"
     volumes:
       - ./loki-config.yaml:/etc/loki/local-config.yaml
+    networks:
+      - logger-net  
+
 
   grafana:
     image: grafana/grafana:10.4.1
@@ -42,5 +50,11 @@ services:
       - grafana-storage:/var/lib/grafana
     depends_on:
       - loki
+    networks:
+      - logger-net
+
 volumes:
   grafana-storage:
+  
+networks:
+  logger-net:

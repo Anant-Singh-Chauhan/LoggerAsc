@@ -11,6 +11,9 @@ RUN npm install --only=production
 # Copy the rest of the application files
 COPY . .
 
+# Create logs directory and set full permissions
+RUN mkdir -p /app/logs && chmod -R 777 /app/logs
+
 # Expose the port your service runs on
 EXPOSE 3000
 

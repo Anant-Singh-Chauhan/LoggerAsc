@@ -9,7 +9,8 @@
 test.rest
 
 # log file
-logs/
+/logs/*
+!/logs/.gitkeep  # if you want the folder to stay in git
 app.log
 
 # grafana
