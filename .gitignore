@@ -9,7 +9,11 @@
 test.rest
 
 # log file
+logs/
 app.log
+
+# grafana
+/grafana-data
 
 # testing
 /coverage

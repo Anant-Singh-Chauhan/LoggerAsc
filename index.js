@@ -1,50 +1,45 @@
-require('dotenv').config(); // read env variables 
+require('dotenv').config(); // Load environment variables
 
-// take variable info from env
-const env = process.env.NODE_ENV || 'development';
-const config = require(`./config/${env}`);
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const connectDB = require('./db');
 
-const dbUrl = config.dbUrl;
-const port = config.port;
+const env = process.env.NODE_ENV || 'development';
+const config = require(`./config/${env}`);
 
 const customLogger = require('./logger');
 
+const port = config.port || 3000;
+
 const app = express();
 
-// Use CORS middleware
+// Enable CORS for cross-origin logging
 app.use(cors({
-  origin: '*',  // Allow all origins (for testing)
-  methods: ['POST'], // only allowing 'Posting' logs
+  origin: '*',  
+  methods: ['POST'], 
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(bodyParser.json());
 
-// Connect to MongoDB
-connectDB(dbUrl);
-
-// Endpoint for logging from other projects
+// API endpoint to receive logs from other projects
 app.post('/log', (req, res) => {
-  const { level, message, label, isDefault, meta } = req.body;
-  customLogger.log({
-    level: level || 'info',
-    message: message,
-    label: label || 'defaultLabel', // Dynamically set label from the request
-    // isDefault: isDefault || false,
-    meta: {
-      ...meta,
-      isDefault: isDefault || false,  // Add to meta if not directly supported
-      project: label || 'defaultLabel' // Project name as label
-    },
-  });
-  res.status(200).send('Log received');
-});
+  const { logLevel, message, project, platform, label, user, meta } = req.body;
 
+  customLogger.log({
+    level: logLevel || 'info',
+    message: message || 'No message provided',
+    project: project || 'unknown-project',
+    platform: platform || 'unknown-platform',
+    user: user || 'unknown-user',
+    label: label || 'general',
+    meta: meta || {}
+  });
+
+  res.status(200).send({ status: 'Log received' });
+});
+// Start server
 app.listen(port, () => {
   console.log(`Logger service running on port ${port}`);
 });
